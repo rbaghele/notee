@@ -1,0 +1,17 @@
+<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+		<div class="loginmodal-container">
+			<h1>Login to Your Account</h1><br>
+
+			<%= form_for :user, url: user_session_path do |f| %>
+				<%= f.text_field :email, placeholder: 'Email' %>
+				<%= f.password_field :password, placeholder: 'Password' %>
+				<input type="submit" name="login" class="login loginmodal-submit" value="Login">
+			<% end %>
+
+		  <div class="login-help">
+			<!-- <a href="#" data-toggle="modal" data-target="#register-modal">Register</a> - <a href="#">Forgot Password</a> -->
+		  </div>
+		</div>
+	</div>
+</div>
