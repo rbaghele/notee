@@ -32,6 +32,13 @@
 
 <% unless f.object.blank? %>
   <div class="form-group">
+    <label class="control-label col-sm-2" for="cover_image">Cover image:</label>
+    <div class="col-md-10">
+      <%= f.file_field :cover_image %>
+    </div>  
+  </div>
+
+  <div class="form-group">
     <div class="col-sm-12">
       <%= f.text_area :content, class: 'form-control' %>
       <!-- <input type="text" class="form-control" id="tags" placeholder="Enter tags"> -->

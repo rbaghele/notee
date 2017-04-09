@@ -18,7 +18,12 @@
 				
 
 				<div class="article-content">
-					<%= article.content.to_s.html_safe %>
+					<div>
+						<img src="<%= article.cover_image.url %>" class='img-responsive'>
+					</div>
+					<p>
+						<%= article.content.to_s.html_safe %>	
+					</p>
 				</div>
 			</div>
 		</div>
