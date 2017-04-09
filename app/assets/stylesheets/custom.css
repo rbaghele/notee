@@ -125,3 +125,33 @@ nav.sidebar{
 nav.sidebar li {
   width: 100%;
 }
+.well.well-no-bg{
+  background-color: #FFF;
+  background-image: none;
+}
+
+.article-block > .well:hover, .article-block > .well:focus{
+  border: 1px solid #337ab7;
+}
+
+.article-block > .well .article-actions{
+  display: none;
+}
+
+.article-block > .well:hover .article-actions, .article-block > .well:focus .article-actions{
+  display: inline-block;
+  position: absolute;
+  float: right;
+  top: 0;
+  right: 22px;
+  font-size: 33px;
+  cursor: pointer;
+}
+
+.article-actions:after {
+  content: '\2807';
+  font-size: 1em;
+  color: #2e2e2e
+}
+
+

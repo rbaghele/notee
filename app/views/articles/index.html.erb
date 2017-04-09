@@ -1,1 +1,26 @@
 <%= render 'new' %>
+
+<div class="row">
+	<% @articles.each do |article| %>
+		<div class="col-xs-12 col-md-6 article-block">
+			<div class="well well-sm well-no-bg">
+				<div class="article-title">
+					<h4><%= article.title %></h4> 
+					
+					<div>
+						<span class="article-actions" data-toggle="dropdown"></span>
+						<ul class="dropdown-menu">
+				      <li><%= link_to 'Edit', edit_article_path(article) %></li>
+				      <li><%= link_to 'Delete', article_path(article), :'data-method' => 'DELETE' %></li>
+				    </ul>
+			    </div>
+				</div>
+				
+
+				<div class="article-content">
+					<%= article.content.to_s.html_safe %>
+				</div>
+			</div>
+		</div>
+	<% end %>
+</div>
