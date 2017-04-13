@@ -1,1 +1,3 @@
-
+<% unless user_signed_in? %>
+  <%= render partial: 'shared/login_signup' %>
+<% end %>

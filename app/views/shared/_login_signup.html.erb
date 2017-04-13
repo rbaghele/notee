@@ -1,0 +1,55 @@
+<div class="login-signup-container">
+  <div class="col-md-12 text-center">
+    <img class="logo" src="<%= asset_path('notee.png') %>" ">
+  </div>
+
+  <div class="clearfix"></div>
+  
+  <div class="col-md-12 text-center">
+    <h4>Share knowledge and make people learn</h4>
+  </div>
+  <div class="clearfix"></div>
+
+  <div class="col-md-12 well no-bg">
+    <div class="row">
+      <div class="col-xs-12 col-md-6" style="border-right: 1px solid #d7d7d7;">
+        <div class="form-group">
+          <button type="button" class="btn btn-default btn-lg" aria-label="Left Align" style="width: 100%">
+            <span class="buttonGoogleIcon" aria-hidden="true"></span><span>Continue with Google</span> 
+          </button>
+        </div>
+
+        <div class="form-group">
+          <button type="button" class="btn btn-default btn-lg" aria-label="Left Align" style="width: 100%">
+            <span class="buttonFacebookIcon" aria-hidden="true"></span><span>Continue with Facebook</span>
+          </button>
+        </div>
+
+        <p class="font12">Continue With Email. By signing up you indicate that you have read and agree to the Terms of Service and Privacy Policy.</p>
+      </div>
+
+      <div class="col-xs-12 col-md-6">
+        <span>Login</span>
+        
+        <%= form_for :user, url: user_session_path do |f| %>
+          <div class="form-group">
+            <%= f.text_field :email, placeholder: 'Email', class: 'form-control' %>
+          </div>
+          <div class="form-group">
+            <%= f.password_field :password, placeholder: 'Password', class: 'form-control' %>
+          </div>
+
+          <div>
+            <span class="font12">Forget password?</span>
+
+            <button type="submit" class="btn btn-default smallbutton" aria-label="Left Align">
+              <span aria-hidden="true"></span>
+              <span>Login</span>
+            </button>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>    
+</div>
+
