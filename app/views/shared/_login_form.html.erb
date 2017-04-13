@@ -1,0 +1,17 @@
+<%= form_for :user, url: user_session_path do |f| %>
+  <div class="form-group">
+    <%= f.text_field :email, placeholder: 'Email', class: 'form-control' %>
+  </div>
+  <div class="form-group">
+    <%= f.password_field :password, placeholder: 'Password', class: 'form-control' %>
+  </div>
+
+  <div>
+    <span class="font12">Forget password?</span>
+
+    <button type="submit" class="btn btn-default pull-right">
+      <span aria-hidden="true"></span>
+      <span>Login</span>
+    </button>
+  </div>
+<% end %>
