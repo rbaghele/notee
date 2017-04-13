@@ -13,20 +13,28 @@
   <div class="col-md-12 well no-bg">
     <div class="row">
       <div class="col-xs-12 col-md-6" style="border-right: 1px solid #d7d7d7;">
-        <div class="form-group">
-          <button type="button" class="btn btn-default btn-lg" aria-label="Left Align" style="width: 100%">
-            <span class="buttonGoogleIcon" aria-hidden="true"></span><span>Continue with Google</span> 
-          </button>
+        
+        <div class="social-signup-wrapper">
+          <div class="form-group">
+            <button type="button" class="btn btn-default btn-lg" aria-label="Left Align" style="width: 100%">
+              <span class="buttonGoogleIcon" aria-hidden="true"></span><span>Continue with Google</span> 
+            </button>
+          </div>
+
+          <div class="form-group">
+            <button type="button" class="btn btn-default btn-lg" aria-label="Left Align" style="width: 100%">
+              <span class="buttonFacebookIcon" aria-hidden="true"></span><span>Continue with Facebook</span>
+            </button>
+          </div>
+
+          <p>
+            <a href="javascript:void(0);" onclick="NT.home.toggleSignUp();">Continue With Email </a>. By signing up you indicate that you have read and agree to the Terms of Service and Privacy Policy.
+          </p>
         </div>
 
-        <div class="form-group">
-          <button type="button" class="btn btn-default btn-lg" aria-label="Left Align" style="width: 100%">
-            <span class="buttonFacebookIcon" aria-hidden="true"></span><span>Continue with Facebook</span>
-          </button>
+        <div class="email-signup-wrapper hide">
+          <%= render partial: 'shared/register_form' %>
         </div>
-
-        <p>
-          <a href="javascript:void(0);">Continue With Email </a>. By signing up you indicate that you have read and agree to the Terms of Service and Privacy Policy.</p>
       </div>
 
       <div class="col-xs-12 col-md-6">

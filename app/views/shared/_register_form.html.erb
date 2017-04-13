@@ -1,21 +1,27 @@
-<div class="modal fade" id="register-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-		<div class="registermodal-container">
-			<h1>Create New Account</h1><br>
-		  
-		  <%= form_for :user, url: user_registration_path do |f| %>
-				<%= f.text_field :fname, placeholder: 'First Name' %>
-				<%= f.text_field :lname, placeholder: 'Last Name' %>
-				<%= f.text_field :email, placeholder: 'Email' %>
-				<%= f.password_field :password, placeholder: 'Password' %>
-				<%= f.password_field :confirm_password, placeholder: 'Confirm Password' %>
-
-				<input type="submit" name="register" class="register registermodal-submit" value="Register">
-		  <% end %>
-			
-		  <div class="register-help">
-			<!-- <a href="#" data-toggle="modal" data-target="#login-modal">Login</a> - <a href="#">Forgot Password</a> -->
-		  </div>
-		</div>
+<%= form_for :user, url: user_registration_path do |f| %>
+	<div class="form-group">
+		<%= f.text_field :fname, placeholder: 'First Name', class: 'form-control' %>
 	</div>
+
+	<div class="form-group">
+		<%= f.text_field :lname, placeholder: 'Last Name', class: 'form-control' %>
+	</div>
+
+	<div class="form-group">
+		<%= f.text_field :email, placeholder: 'Email', class: 'form-control' %>
+	</div>
+
+	<div class="form-group">
+		<%= f.password_field :password, placeholder: 'Password', class: 'form-control' %>
+	</div>
+
+	<div class="form-group">
+		<%= f.password_field :confirm_password, placeholder: 'Confirm Password', class: 'form-control' %>
+	</div>
+
+	<input type="submit" name="register" class="btn btn-default">
+<% end %>
+
+<div class="register-help">
+	<a href="#" data-toggle="modal" data-target="#login-modal" onclick="NT.home.toggleSignUp();">Sign up with social account</a>
 </div>
