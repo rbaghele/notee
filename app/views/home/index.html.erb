@@ -1,3 +1,5 @@
 <% unless user_signed_in? %>
-  <%= render partial: 'shared/login_signup' %>
+  <div class="col-xs-12">
+    <%= render partial: 'shared/login_signup' %>
+  </div>
 <% end %>

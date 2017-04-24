@@ -1,93 +1,224 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto);
 
-.navbar.navbar-inverse{
-  background-color: #FFFFFF;
-  border-color: #7d7d7d;
-  background-image:none;
-}
-
-.navbar.navbar-inverse .navbar-nav > .open > a,
-.navbar.navbar-inverse .navbar-nav > li > a:hover,
-.navbar.navbar-inverse .navbar-nav > li > a:focus,
-.navbar.navbar-inverse .navbar-nav > .open > a:focus,
-.navbar.navbar-inverse .navbar-nav > .open > a:hover {
-    color: #000;
-    background-color: #FFFFFF;
-    background-image: none;
-}
-
-/* SIDEBAR */
-nav.sidebar .navbar-collapse, nav.sidebar .container-fluid{
-  padding: 0 0px 0 0px;
-}
-
-nav.sidebar{
-  width: 200px;
+html{
   height: 100%;
-  float: left;
-  margin-bottom: 0px;
-}
-
-nav.sidebar li {
   width: 100%;
 }
-.well.well-no-bg{
-  background-color: #FFF;
-  background-image: none;
+
+
+body{
+  height: 100%;
+  width: 100%;
+  /*background: #e6e6fa;*/
+  /*background: url("http://www.pptback.com/uploads/blue-wood--backgrounds-powerpoint.jpg") no-repeat center top;*/
+  /*background: url("1.jpg") no-repeat center top;
+  background-size:cover;*/
+}
+.center{
+  text-align: center;
+
+}
+.logocontainer{
+  /*background: url("notee.png") no-repeat center top;*/
+  height: 12%;
+  margin-top: 5%;
+  text-align: center;
 }
 
-.article-block > .well:hover, .article-block > .well:focus{
-  border: 1px solid #337ab7;
+.centercontainer{
+/*  min-height: 225px;*/
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: white;
+    padding: 15px;
 }
 
-.article-block > .well .article-actions{
-  display: none;
+.socialbutton{
+  /*width: 200px;
+*/    margin-bottom: 20px;
 }
-
-.article-block > .well:hover .article-actions, .article-block > .well:focus .article-actions{
-  display: inline-block;
-  position: absolute;
-  float: right;
-  top: 0;
-  right: 22px;
-  font-size: 33px;
-  cursor: pointer;
-}
-
-.article-actions:after {
-  content: '\2807';
-  font-size: 1em;
-  color: #2e2e2e
-}
-
-.login-signup-container{
-  width:600px;
-  position:fixed;
-  top: 23%;
-  left: 50%;
-  margin-left: -300px; /*set to a negative number 1/2 of your width*/
-}
-.login-signup-container .logo{
-  margin-bottom: 40px;
-}
-.well.no-bg{
-  background: none
-}
-.buttonGoogleIcon{
+.google{
   background: url(google.png) no-repeat 0 0;
   height: 18px;
   width: 18px;
-  display: inline-block;
+  display: block;
   float: left;
-  margin-top: 4px;
+    padding-left: 25px
 }
-.buttonFacebookIcon{
+.facebook{
   background: url(facebook.png) no-repeat 0 0;
   height: 18px;
   width: 18px;
-  display: inline-block;
+  display: block;
   float: left;
-  margin-top: 4px;
+    padding-left: 25px
+
 }
 
+.socialbuttonui{
+  font-size: 14px;
+  height: 40px;
+  color: #3386c0;
+  font-family: sans-serif;
+  background-image:none;
+}
 
+.font12grey {
+    font-size: 12px;
+    color: #a7a2a2;
+    font-family: sans-serif;
+    float: left;
+}
+
+.caption{
+  text-align: center;
+    font-size: 20px;
+    font-family: serif;
+    color: #3386c0;
+    margin-bottom: 20px;
+}
+.font14blue{
+  font-size: 14px;
+  color: #3386c0; 
+  font-family: sans-serif;
+}
+
+.bluebutton{
+  background:#3386c0; 
+    font-size: 12px;
+    font-family: sans-serif;
+    color: white;    
+}
+
+.footer {
+    position: absolute;
+    bottom: 5px;
+    font-size: 12px;
+}
+
+.custom-form-control{
+  display: inline-block;
+    width: 96%;
+    height: 34px;
+    font-size: 12px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    font-family: sans-serif;
+}
+
+.blue-outline-button{
+  display: inline-block;
+    padding: 5px 12px;
+    margin-bottom: 0;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid #3386c0;
+    border-radius: 4px;
+    color: #3386c0;
+    font-family: sans-serif;
+}
+
+.custom-drop-down-top{
+  background-color: #ffffff;
+  border-color: #ffffff;
+  padding: 0px;
+}
+
+#search:focus, #search:hover, #search:active, #search:visited {
+  outline-width: 0;
+}
+
+.feedimagebox{
+  width:100%;
+}
+
+.custominputbox{
+  display: inline-block;
+    width: 90%;
+    height: 30px;
+    padding: 6px 12px;
+    font-size: 12px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 2px
+}
+
+.animal{
+  height:20px;
+  width: 20px;
+  background: url('sprite.png') 0px 0px;
+}
+
+.photography{
+  height: 20px;
+  width: 20px;
+  background: url('sprite.png') 140px 20px; 
+}
+
+.advertising{
+  height: 20px;
+  width: 20px;
+  background: url('sprite.png') 120px 20px; 
+}
+
+.animation{
+  height: 20px;
+  width: 20px;
+  background: url('sprite.png') 100px 20px; 
+}
+
+.architecture{
+  height: 20px;
+  width: 20px;
+  background: url('sprite.png') 80px 20px;  
+}
+
+.art{
+  height: 20px;
+  width: 20px;
+  background: url('sprite.png') 60px 20px;  
+}
+
+.automobile{
+  height: 20px;
+  width: 20px;
+  background: url('sprite.png') 40px 20px;  
+}
+
+.challenge{
+  height: 20px;
+  width: 20px;
+  background: url('sprite.png') 20px 20px;  
+}
+
+.btn-default.focus, .btn-default:focus, .btn-default:hover, .btn-default.active, .btn-default:active, .open>.dropdown-toggle.btn-default, .btn-default.focus, .btn-default:focus, .btn-default:hover, .btn-default.active, .btn-default:active, .open>.dropdown-toggle.btn-default, .btn-default.active.focus, .btn-default.active:focus, .btn-default.active:hover, .btn-default:active.focus, .btn-default:active:focus, .btn-default:active:hover, .open>.dropdown-toggle.btn-default.focus, .open>.dropdown-toggle.btn-default:focus, .open>.dropdown-toggle.btn-default:hover {
+    
+    color: #000000;
+    background-color: #ffffff;
+    border-color: #ffffff;
+    box-shadow: none;
+    -webkit-box-shadow: none; 
+}
+.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
+    outline: 0px auto -webkit-focus-ring-color;
+    outline-offset: none;
+}

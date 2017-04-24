@@ -1,0 +1,116 @@
+.leftborder{
+  border-left: 1px solid #ccc;
+}
+
+.leftborderhidden{
+  border-left: hidden;    
+}
+
+.m-top8{
+  margin-top: 8px;
+}
+
+.padding0{
+  padding: 0px;
+}
+
+.custom-page-header {
+  padding-bottom: 0px;
+  margin-top: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.grey{
+  color: #a7a2a2;
+}
+
+.rightfloat{
+  float: right;
+}
+
+.leftfloat{
+  float: left;
+}
+
+.inlineblock{
+  display: inline-block;
+}
+
+.top10margin{
+  margin-top: 10px;
+}
+
+.margin-15left{
+  margin-left: -15px;
+}
+
+.font12{
+  font-size: 12px;
+  color: #a7a2a2;
+}
+
+.font9{
+  font-size: 9px;
+  color: #a7a2a2;
+}
+
+.font12only{
+  font-size: 12px;
+}
+
+.margin0{
+  margin: 0px;
+}
+
+.margin5{
+  margin: 5px;
+}
+
+.bordergrey{
+  border:1px solid #dcd7d7;
+}
+
+.paddingbottom{
+  padding-bottom: 10px;
+}
+
+.margintop40{
+  margin-top: 40px;
+}
+
+.paddingleft25{
+  padding-left: 25px;
+}
+
+.margin-top-20{
+  margin-top: -20px;
+}
+
+.marginbottom3{
+  margin-bottom: 3px;
+}
+
+.paddingtopleft{
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+.paddingleft45{
+  padding-left: 45px;
+}
+
+.paddingright10{
+  padding-right: 10px;
+}
+
+.margintop3{
+  margin-top: 3px;
+}
+
+.margintop10{
+  margin-top: 10px;
+}
+
+.marginright{
+  margin-right: 3px;
+}

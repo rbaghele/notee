@@ -19,9 +19,9 @@
 		<%= f.password_field :confirm_password, placeholder: 'Confirm Password', class: 'form-control' %>
 	</div>
 
-	<input type="submit" name="register" class="btn btn-default">
+	<button type="submit" class="btn btn-default bluebutton">Register</button>
 <% end %>
 
-<div class="register-help">
-	<a href="#" data-toggle="modal" data-target="#login-modal" onclick="NT.home.toggleSignUp();">Sign up with social account</a>
+<div class="font12grey m-top8">
+	<a href="javascript:void(0)" onclick="NT.home.toggleSignUp();">Sign up with social account</a>
 </div>

@@ -1,48 +1,52 @@
-<div class="login-signup-container">
-  <div class="col-md-12 text-center">
-    <img class="logo" src="<%= asset_path('notee.png') %>" ">
-  </div>
+<div class="row logocontainer"><img src="<%= asset_path('notee.png') %>" "></div>
+<div class="row caption">Share to spread knowledge and understand better</div>
 
-  <div class="clearfix"></div>
-  
-  <div class="col-md-12 text-center">
-    <h4>Share knowledge and make people learn</h4>
-  </div>
-  <div class="clearfix"></div>
 
-  <div class="col-md-12 well no-bg">
-    <div class="row">
-      <div class="col-xs-12 col-md-6" style="border-right: 1px solid #d7d7d7;">
-        
+<div class="row" >
+  <div class="col-xs-1 col-md-3"></div>
+  <div class="col-xs-10 col-md-6  centercontainer">
+    <div class="row col-md-12">
+      <div class="col-md-6">
+
+        <!-- Social SignUp -->
         <div class="social-signup-wrapper">
-          <div class="form-group">
-            <button type="button" class="btn btn-default btn-lg" aria-label="Left Align" style="width: 100%">
-              <span class="buttonGoogleIcon" aria-hidden="true"></span><span>Continue with Google</span> 
+          <div class="col-xs-12" style="padding: 0">
+            <button type="button" class="btn btn-default socialbutton socialbuttonui col-xs-12">
+              <span class="google" aria-hidden="true">Continue with Google</span>
             </button>
           </div>
-
-          <div class="form-group">
-            <button type="button" class="btn btn-default btn-lg" aria-label="Left Align" style="width: 100%">
-              <span class="buttonFacebookIcon" aria-hidden="true"></span><span>Continue with Facebook</span>
+          
+          <div class="col-xs-12" style="padding: 0">
+            <button type="button" class="btn btn-default socialbutton socialbuttonui col-xs-12">
+              <span class="facebook" aria-hidden="true">Continue with Facebook</span>
             </button>
           </div>
-
-          <p>
+          <span class="font12grey">
             <a href="javascript:void(0);" onclick="NT.home.toggleSignUp();">Continue With Email </a>. By signing up you indicate that you have read and agree to the Terms of Service and Privacy Policy.
-          </p>
+          </span>
         </div>
-
+        <!-- Email SignUp -->
         <div class="email-signup-wrapper hide">
           <%= render partial: 'shared/register_form' %>
         </div>
       </div>
-
-      <div class="col-xs-12 col-md-6">
-        <h4>Login</h4>
-        <%= render partial: 'shared/login_form' %>
-        
-      </div>
+      
+      <div class="col-md-6 leftborder leftborder-hidden-col-xs-12">
+        <div class="col-xs-12 padding0 padding0-hidden-col-md-6"> 
+        <span class="font14blue">Login</span>
+          <br>
+          <%= render partial: 'shared/login_form' %>
+          <!-- <input type="text" class="form-control buttonmargin" style="margin-bottom: 20px;margin-top: 10px;" id="usr" placeholder="Email">
+          <input type="Password" class="form-control buttonmargin" style="margin-bottom: 20px;margin-top: 10px;" id="psd" placeholder="Password"> -->
+          <!-- <div> -->
+          <!-- <button type="button" class="btn btn-default bluebutton">Login</button>
+          </div>
+          <span class="font12grey m-top8">Forgot password?</span> -->
+        <!-- </div> -->
+      </div>  
     </div>
-  </div>    
+  </div>
+  <div class="col-xs-1 col-md-3"></div>
 </div>
+
 
